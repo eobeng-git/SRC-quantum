@@ -1,0 +1,11 @@
+# Ignore directories
+data/
+results/
+classification_experiment/
+.ipynb_checkpoints/
+pycache/
+
+# Ignore SLURM output and Jupyter notebooks
+slurm-*.out
+nohup.out
+*.ipynb

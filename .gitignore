@@ -4,8 +4,10 @@ results/
 classification_experiment/
 .ipynb_checkpoints/
 pycache/
+__pycache__/
 
 # Ignore SLURM output and Jupyter notebooks
-slurm-*.out
+*.out
+*.err
 nohup.out
 *.ipynb

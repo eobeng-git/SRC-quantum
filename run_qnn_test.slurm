@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=qnn-test
 #SBATCH --nodes=1
-#SBATCH --time=240:00:00
+#SBATCH --time=240:00:00   # 10 days
 #SBATCH --output=qnn_test_%j.out
 #SBATCH --error=qnn_test_%j.err
 #SBATCH --mail-user=emmanuel.obeng@student.univaq.it

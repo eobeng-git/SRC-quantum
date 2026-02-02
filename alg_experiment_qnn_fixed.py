@@ -79,6 +79,11 @@ class PennyQNN:
             preds.append(1 if val > 0 else 0)  # binary classification example
         return np.array(preds)
 
+    def score(self, X, y):
+        """Compatibility method for scikit-learn Pipeline and scoring"""
+        preds = self.predict(X)
+        return np.mean(preds == y)  # accuracy (fraction correct)
+
 MODELS["penny_qnn"] = {
     "estimator": PennyQNN(),
     "param_grid": {}
